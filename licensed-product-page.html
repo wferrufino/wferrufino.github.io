@@ -11,6 +11,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+
+
 </head>
 
 <body>
@@ -210,7 +212,19 @@
             <div class="col-sm-7">
                 <h1 class="producthero--header">Network Performance Monitor</h1>
                 <h4 class="producthero--subheader">Ultimate end-to-end visibility for your network.</h4>
-                <img src="images/network-performance-monitor.jpg" class="producthero--heroimage" alt="">
+                <!--<img src="images/network-performance-monitor.jpg" class="producthero--heroimage" alt="">-->
+
+                <a href="#" class="modal-overlay"
+    data-title="Network Performance Monitor"
+    data-caption-title="Image Name If Available"
+    data-fullsize-image="images/network-performance-monitor.jpg"
+    data-caption-description="Example Description"
+    data-linktype="@@linkType"
+    data-linkdetail="@@linkDetail">
+
+    <img src="images/network-performance-monitor.jpg" alt="Image" class="producthero--heroimage">
+</a>
+
             </div>
             <div class="col-sm-5">
                 <h4 class="producthero--subsectionheader">Starting at $2,795</h4>
@@ -466,7 +480,19 @@
 		  	<a class="btnGreen mobile" href="">Email Link to Free Trial</a>
 		</div>
 		<div class="col-sm-4" style="text-align:center">
-			<h3>Let's Talk it Over</h3>
+			 <div class="sales-rail">
+    <h5 class="bold sales-rail-header">Let's Talk It Over</h5>
+    <h5 class="sales-rail-header">Contact Our Team. Anytime.</h5>
+    <div class="phone-row">
+        <span class="orange-box"></span><span>1 (800) 555-5555</span>
+    </div>
+    <div class="email-row">
+        <span class="orange-box"></span><span>me@somewhere.com</span>
+    </div>
+    <button class="btn btn-warning">Get a Quote</button>
+    <button class="btn btn-warning">Buy Now</button>
+</div>
+
 		</div>
 	</div>
 </div>
@@ -809,66 +835,22 @@
     </div>
 </div>
 
-    <div class="try-it-out row">
-  <div class="col-sm-3">
-    <!--left rail links -->
-    <h5 class="bold rail-header">Other Useful Resources</h5>
-<ul class="rail-links">
-  <li>
-    <a href="#">Datasheets</a>
-  </li>
-  <li>
-    <a href="#">Interactive Demo</a>
-  </li>
-  <li>
-    <a href="#">Documentation Training</a>
-  </li>
-  <li>
-    <a href="#">Update Guide</a>
-  </li>
-  <li>
-    <a href="#">Version History</a>
-  </li>
-  <li>
-    <a href="#">ROI Calculator</a>
-  </li>
-</ul>
-
-  </div>
-  <div class="col-sm-6">
-    <!-- registration form -->
-    <h3 class="registration-header">Try It Out for 30 Days</h3>
-<h4 class="registration-subheader">Fully functional, completely free</h4>
-
-<form class="form-inline registration-form">
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="FIRST NAME">
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="LAST NAME">
-    </div>
-    <button class="btn btn-success click-me">DOWNLOAD FREE TRIAL</button>
-</form>
-
-  </div>
-  <div class="col-sm-3">
-    <!-- contact sales right rail -->
-    <div class="sales-rail">
-    <h5 class="bold sales-rail-header">Let's Talk It Over</h5>
-    <h5 class="sales-rail-header">Contact Our Team. Anytime.</h5>
-    <div class="phone-row">
-        <span class="orange-box"></span><span>1 (800) 555-5555</span>
-    </div>
-    <div class="email-row">
-        <span class="orange-box"></span><span>me@somewhere.com</span>
-    </div>
-    <button class="btn btn-warning">Get a Quote</button>
-    <button class="btn btn-warning">Buy Now</button>
+ 
+    <div class="container-fluid seoAnswerBox">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="prodName">
+				<h5>Network Monitoring Software</h5>
+				<span>definition</span>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="description">
+				Network monitoring software monitors fault, availability, and performance for devices connected to a network to aid in dectection, diagnosis, and resolution of network performance issues.
+			</div>
+		</div>
+	</div>
 </div>
-
-  </div>
-</div>
-
 
     <div class="container-fluid footer-top stretch">
     <div class="container">
@@ -919,11 +901,15 @@
         </div>
     </div>
 </div>
-<!--/ .container-->
+
+<div class="full-screen-overlay">
+  <div class="overlay-contents">
+    <div class="modal-carousel"></div>
+  </div>
+</div>
 
   </div>
-  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
-<script src="scripts/vendor.js"></script>
+  <script src="scripts/vendor.js"></script>
 <script src="scripts/plugins.js"></script>
 <script src="scripts/main.js"></script>
 
