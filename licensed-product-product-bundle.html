@@ -754,9 +754,33 @@
     </div>
 </div>
 
-<div class="full-screen-overlay">
+<div class="full-screen-overlay-carousel">
     <a href="#" class="close">Close <i class="fa fa-times-circle-o"></i></a>
     <div class="carousel slide" id="lightbox" data-ride="carousel" data-interval="false"></div>
+</div>
+
+<div class="full-screen-overlay">
+    <div class="overlay-contents">
+        <div class="static-content">
+            <div class="inner">{{STATIC CONTENT}}</div>
+            <div class="caption">
+                <input type="checkbox" id="static-caption" name="caption[]" />
+                <div class="caption-content">
+                    <label for="static-caption" class="caption-control"></label>
+                    <h3>{{CAPTION_TITLE}}</h3>
+                    <p>{{CAPTION_CONTENT}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-title">
+            <h4>{{TITLE}}</h4>
+            <a href="#" class="close"><i class="ion ion-android-close"></i></a>
+        </div>
+    </div>
+    <div class="modal-nav">
+        <a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
+        <a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+    </div>
 </div>
 
   </div>
