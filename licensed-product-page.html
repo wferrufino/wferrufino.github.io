@@ -231,7 +231,7 @@
 </nav>
 
 
-     <!-- styles located in _product_hero.scss -->
+    <!-- styles located in _product_hero.scss -->
 <div class="container-fluid yellow-border-bottom licensed">
     <div class="container">
         <div class="row">
@@ -258,7 +258,7 @@
                 <h5>for up to 100 devices</h5>
                 <a href="#" class="producthero--footerheader">See Pricing Details</a>
                 <!-- hidden on phone -->
-                <div class="hidden-xs producthero--keyfeatures">
+                <div class="producthero--keyfeatures hidden-xs">
                     <h4 class="producthero--featuresheader">FEATURES</h4>
                     <a href="#" class="producthero--featuressubheader">See More Features</a>
                     <ul class="producthero--featureslist">
@@ -269,23 +269,22 @@
                         <li>Wireless network monitoring and management</li>
                         <li>Consultant and services free deployment</li>
                     </ul>
-
-                    <div class="producthero--systemrequirements">
-                        <h4 class="producthero--featuresheader">SYSTEM REQUIREMENTS</h4>
-                        <a href="" class="producthero--featuressubheader">See All</a>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <h4>20 GB</h4>
-                                <div>Hard Drive</div>
-                            </div>
-                            <div class="col-sm-4">
-                                <h4>3 GB</h4>
-                                <div>Memory</div>
-                            </div>
-                            <div class="col-sm-4">
-                                <h4>Dual Processor</h4>
-                                <div>3 Ghz CPU</div>
-                            </div>
+                </div>
+                <div class="producthero--systemrequirements hidden-xs">
+                    <h4 class="producthero--featuresheader">SYSTEM REQUIREMENTS</h4>
+                    <a href="" class="producthero--featuressubheader">See All</a>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h4>20 GB</h4>
+                            <div>Hard Drive</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4>3 GB</h4>
+                            <div>Memory</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4>Dual Processor</h4>
+                            <div>3 Ghz CPU</div>
                         </div>
                     </div>
                 </div>
@@ -295,7 +294,7 @@
 </div>
 
 
-     <div class="stickySubNav"> 
+    <div class="stickySubNav"> 
 	<div class="inner download">
 		<div class="container form">
 			<div class="col-sm-6">
@@ -450,7 +449,61 @@
 </div>
 
 -->
-      <div class="container-fluid tabsContainer">
+    <div class="container">
+    <div class="row">
+        <div class="hidden-xs">
+            <h5 class="company-logo-strip-header">More than 100,000 companies choose NPM</h5>
+            <div class="company-logo-strip">
+                <img src="images/company_logos/cisco.png" alt="Cisco">
+                <img src="images/company_logos/subaru.png" alt="Subaru">
+                <img src="images/company_logos/airbnb.png" alt="AirBnB">
+                <img src="images/company_logos/fedex.png" alt="FedEx">
+                <img src="images/company_logos/mashable.png" alt="Mashable">
+            </div>
+        </div>
+        <div class="visible-xs-block">
+            <h5 class="company-logo-strip-header">More than 100,000 companies choose NPM</h5>
+            <div class="carousel fdi-Carousel slide company-logo-strip mobile-carousel">
+                <!-- Carousel items -->
+                <div class="carousel fdi-Carousel slide" id="company-logo-carouseldfgdfgsdfgsdfgdf" data-interval="0">
+                    <div class="carousel-inner onebyone-carosel">
+                        <div class="item active">
+                            <div class="col-xs-4">
+                                <a href="#"><img src="images/company_logos/cisco.png" class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <div class="col-xs-4">
+                                <a href="#"><img src="images/company_logos/subaru.png" class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <div class="col-xs-4">
+                                <a href="#"><img src="images/company_logos/airbnb.png" class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <div class="col-xs-4">
+                                <a href="#"><img src="images/company_logos/fedex.png" class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <div class="col-xs-4">
+                                <a href="#"><img src="images/company_logos/mashable.png" class="img-responsive center-block"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#company-logo-carouseldfgdfgsdfgsdfgdf" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#company-logo-carouseldfgdfgsdfgsdfgdf" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+                <!--/carousel-inner-->
+            </div>
+            <!--/myCarousel-->
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid tabsContainer">
 	<a href="#" id="features"></a>
 	<div class="row">
 		<div class="col-sm-12">
@@ -994,8 +1047,6 @@
         </div>
     </div>
 </div>
-
-
 
 
      <div class="callToActionStrip">
