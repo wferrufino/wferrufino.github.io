@@ -265,11 +265,27 @@
 	  				<input type="text" class="inputLarge" id="email" name="email" required>
 	  				<label class="label">Email</label>
 	  			</div>
+          <div class="locationWrap">
+            <div class="smallWrap">
+              <!-- <input type="text" class="inputSmall location" id="country" name="country" required> -->
+                <select class="inputSmall location" id="country" name="country" required>
+                  <option value="select">Select Country</option>
+                  <option value="usa">United States</option>
+                  <option value="canada">Canada</option>
+                  <option value="mexico">Mexico</option>
+                </select> 
+              <label class="label">Country</label>
+            </div>
+            <div class="smallWrap">
+              <input type="text" class="inputSmall location" id="zipcode" name="zipCode" required>
+              <label class="label">Zip Code</label>
+            </div>
+          </div>
   				<div class="largeWrap">
 	  				<input type="text" class="inputLarge" id="phone" name="phone" required>
-	  				<label class="label">Phone (optional)</label>
+	  				<label class="label">Phone</label>
 	  			</div>
-  				<div class="contact">
+  				<!-- <div class="contact">
   					<span class="title">Contact Preference</span>
   					<div class="option">
 		                <input type="radio" name="contact[]" value="Email" id="radioEmail" checked="checked" />
@@ -279,7 +295,7 @@
 		                <input type="radio" name="contact[]" value="Phone" id="radioPhone" />
 		                <label for="radioPhone">Phone</label>
 		            </div>	
-  				</div>
+  				</div> -->
   				 <input class="btnGreen submit desktop" id="regFormSubmit" type="submit" value="Proceed to Free Download">
            <input class="btnGreen submit mobile" id="regFormSubmit" type="submit" value="Email link to free Trial">
   		</form>
