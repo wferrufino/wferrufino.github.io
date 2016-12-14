@@ -297,38 +297,42 @@
     <h2>Media Overlays</h2>
     <p>*NOTE: These examples show overlay titles and captions, which are currently not shown on the current site or in the user stories. Since this functionality is already built, it is still included. They can simply not be used by not entering them as data attributes.</p>
     <h4>Single Image Overlay w/ Image &amp; Caption</h4>
-    <a href="#" class="modal-overlay-carousel"
+    <a href="http://lorempixel.com/700/700/cats" class="popup-image"
     data-title="Single Image Overlay Example with Caption"
     data-caption-title="Example Title"
     data-fullsize-image="http://lorempixel.com/700/700/cats"
     data-caption-description="Example Description"
     data-linktype="@@linkType"
-    data-linkdetail="@@linkDetail"
-    data-id="image41">
-
-    <img src="http://lorempixel.com/600/300/cats" alt="Image" class="@@imageclass" data-id="image41">
+    data-linkdetail="@@linkDetail">
+    <img src="http://lorempixel.com/600/300/cats" alt="Image" class="@@imageclass">
 </a>
 
     <h4>Single Image Overlay w/ Text &amp; No Caption</h4>
-    
+    <a href="http://lorempixel.com/1440/700/cats" class="popup-image"
+    data-title=""
+    data-caption-title=""
+    data-fullsize-image="http://lorempixel.com/1440/700/cats"
+    data-caption-description="">
+
+    <i class="fa fa-image"></i>View Image
+</a>
+
     <h4>Video Overlay w/ Image &amp; Caption Title</h4>
-    <a href="#" class="modal-overlay-carousel video hidden-xs"
+    <a href="//play.vidyard.com/VtVhHqGL5EQLnTSakKEzHN.html?v=3.1.1&autoplay=1" class="popup-video"
     data-id="2"
     data-title="Video Overlay Example with Caption Title"
     data-caption-title="Video Example"
     data-caption-description="">
-    <span class="title"><i class="fa fa-play-circle"></i>Video Overlay Example with Caption Title (1:34)</span><img src="https://i.ytimg.com/vi/Ku3Ndkws1Wg/hqdefault.jpg" alt="Image" class="@@imageclass" /><i class="fa fa-play"></i>
+    <img src="https://i.ytimg.com/vi/Ku3Ndkws1Wg/hqdefault.jpg" alt="Image" class="@@imageclass" /><i class="fa fa-play"></i>
 </a>
-<textarea class="modal-content hidden-xs" id="modal_content_2">
-    <iframe width="1000" height="535" src="https://www.youtube.com/embed/Ku3Ndkws1Wg?autoplay=1" frameborder="0" allowfullscreen=""></iframe>
-</textarea>
-<div class="mobile-video visible-xs-block" id="mobile_video_2">
-  <iframe width="490" height="276" src="https://www.youtube.com/embed/Ku3Ndkws1Wg" frameborder="0" allowfullscreen=""></iframe>
-</div>
-<input type="hidden" id="hidden_overlay_2">
+
+<!--https://www.youtube.com/embed/Ku3Ndkws1Wg?autoplay=1-->
+<!--//play.vidyard.com/-DLBPfthylaYI5tMI78aTw.html?v=3.1.1-->
+<!--//play.vidyard.com/" + VideoOverlay.Video_ID + ".js?v=3.1.1&type=inline&autoplay=1-->
+<!-- VtVhHqGL5EQLnTSakKEzHN -->
 
     <h4>Video Overlay w/ Text &amp; Caption Description</h4>
-    <a href="#" class="modal-overlay"
+    <a href="http://www.youtube.com/watch?v=Ku3Ndkws1Wg" class="popup-video"
     data-id="3"
     data-title="Video Overlay Example with Caption Title"
     data-caption-title=""
@@ -336,9 +340,6 @@
 
     <i class="fa fa-play"></i>Play Video
 </a>
-<textarea style="display:none" class="modal-content" id="modal_content_3">
-    <iframe width="1000" height="535" src="https://www.youtube.com/embed/Ku3Ndkws1Wg?autoplay=1" frameborder="0"></iframe>
-</textarea>
 
 </div>
 
