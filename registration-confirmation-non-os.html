@@ -292,22 +292,14 @@
   </div>
   <div class="install-help-selections">
     <div class="radio">
-      <label>
-        <!-- name attribute must be the same for all options, id and values
-            should be different for each one -->
-        <input type="radio" name="options" id="option1" value="option1" checked>
-        <label for="option1">sample@solarwinds.com</label>
-        <input type="text" style="display: none;">
-      </label>
+      <span id="emailOption">sample@solarwinds.com</span>
+      <input type="text" style="display: none;" required>
       <span><a class="install-help-selections-edit" href="">edit</a></span>
       <a href="" class="btn btn-default install-help-btn-save" style="display: none">Save</a>
     </div>
     <div class="radio">
-      <label>
-        <input type="radio" name="options" id="option2" value="option2">
-        <label for="option2">555-555-5555</label>
-        <input type="text" style="display: none;">
-      </label>
+      <span id="phoneOption">555-555-5555</span>
+      <input type="text" style="display: none;" required>
       <span><a class="install-help-selections-edit" href="">edit</a></span>
       <a href="" class="btn btn-default install-help-btn-save" style="display: none;">Save</a>
     </div>
