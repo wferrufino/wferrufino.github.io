@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>One Column Registration Form</title>
+    <title>Government Contact Form</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -40,15 +40,6 @@
                     </li>
                 </ul>
             </nav>
-            
-            <div class="input-group custom-search-form pull-right">
-                <input type="text" class="form-control input-sm search-btn" placeholder="">
-                <span class="input-group-btn">
-                    <button class="btn btn-warning btn-sm" type="button">
-                        <span>Search</span>
-                    </button>
-                </span>
-            </div>
             
         </div>
     </div>
@@ -233,105 +224,87 @@
 </nav>
 
 
-    	<div class="container-fluid oneCol_regForm">
-        <div class="row">
-            <div class="col-md-12">
-           	<h1 class="headline">ROI Benefits of Using SolarWinds Server & Application Monitor</h1>
-           	<h1 class="subheadline">Find out how some of our customers have realized ROI with savings on cost, time and effort.</h1>
-            </div>
-        </div>
 
-        <!-- Form + Campaign -->
-        <div class="row">
-	        <div class="col-md-12 campaign">
-
-	        	<div class="productWrapper">
-	        		<h2 class="headline">Server & Application Monitor</h2>
-	            	<h2 class="subheadline">Minimize downtime by troubleshooting application issues 65% faster</h2>
-		            	 <a href="//play.vidyard.com/VtVhHqGL5EQLnTSakKEzHN.html?v=3.1.1&autoplay=1" class="popup-video"
-    data-id="2"
-    data-title="Video Overlay Example with Caption Title"
-    data-caption-title="Video Example"
-    data-caption-description="">
-    <img src="images/network-performance-monitor.jpg" alt="Image" class="producthero--heroimage" /><i class="fa fa-play"></i>
-</a>
-
-<!--https://www.youtube.com/embed/Ku3Ndkws1Wg?autoplay=1-->
-<!--//play.vidyard.com/-DLBPfthylaYI5tMI78aTw.html?v=3.1.1-->
-<!--//play.vidyard.com/" + VideoOverlay.Video_ID + ".js?v=3.1.1&type=inline&autoplay=1-->
-<!-- VtVhHqGL5EQLnTSakKEzHN -->
+    <div class="container-fluid govContactUs">
+  <div class="container oneCol_regForm">
+      <div class="row row-centered">
+          <div class="col-xs-8 col-centered ">
+              <h2>Contact Us</h2>
+              <span class="subText">Please complete all fields to contact a Government Sales Representative.</span>
+            <form id="registrationForm" class="registration">
 
 
-		                <ul>
-		                	<li>Get detailed performance metrics at your finger tips and quickly pinpoint the root cause of application issues</li>
-		                	<li>Set up interlligent application performance alerts to find and fix issues before they impact business services and end-users</li>
-		                	<li>Monitor 200+ applications from as single dashboard-no more wasting time between multiple tools and custom scripts</li>
-		                </ul>
-		                <a class="learnMore" href="#">Learn More</a>
-		        </div>
+              <div class="messageBox">
+                <div class="smallWrap">
+                  <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                  <select class="inputSmall govForm" id="contactDropdown" name="contactDropdown" required>
+                    <option value="select">I want to Contact</option>
+                    <option value="usa">Solarwinds Govt.</option>
+                    <option value="canada">Solarwinds Rep.</option>
+                    <option value="mexico">IT HelpDesk</option>
+                  </select>
+                  <label class="label">I want to Contact</label>
+                </div>
+                <div class="smallWrap">
+                  <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                  <select class="inputSmall" id="knowDropdown" name="knowDropdown" required>
+                    <option value="select">I want to know</option>
+                    <option value="usa">DLT SolarWinds Govt. Reseller</option>
+                    <option value="canada">Network Performance</option>
+                    <option value="mexico">SAM Govt. Reseller</option>
+                  </select>
+                  <label class="label">I want to know</label>
+                </div>
+                <div class="largeWrap">
+                  <textarea class="inputLarge" name="govMessage"></textarea>
+                  <label class="label">Message</label>
+                </div>
+              </div>
 
-		        <div class="productWrapper">
 
-		        	<form id="registrationForm" class="registration">
-		  				<div class="smallWrap">
-			  				<input type="text" class="inputSmall" id="firstName" name="firstName" required>
-			  				<label class="label">First Name</label>
-		  				</div>
-		  				<div class="smallWrap">
-			  				<input type="text" class="inputSmall" id="lastName" name="lastName" required>
-			  				<label class="label">Last Name</label>
-		  				</div>
-		  				<div class="largeWrap">
-		  					<input type="text" class="inputLarge" id="company" name="company" required>
-		  					<label class="label">Company</label>
-		  				</div>
-		  				<div class="largeWrap">
-			  				<input type="text" class="inputLarge" id="email" name="email" required>
-			  				<label class="label">Email</label>
-			  			</div>
-				          <div class="locationWrap">
-				            <div class="smallWrap">
-				              <i class="fa fa-sort-desc" aria-hidden="true"></i>
-				                <select class="inputSmall location" id="country" name="country" required>
+              <div class="smallWrap">
+                <input type="text" class="inputSmall govFirstName" id="firstName" name="firstName" required>
+                <label class="label">First Name</label>
+              </div>
+              <div class="smallWrap">
+                <input type="text" class="inputSmall govLastName" id="lastName" name="lastName" required>
+                <label class="label">Last Name</label>
+              </div>
+              <div class="smallWrap">
+                <input type="text" class="inputSmall govOrg" id="organzation" name="organization" required>
+                <label class="label">Organization</label>
+              </div>
+              <div class="smallWrap">
+                <input type="text" class="inputSmall govTitle" id="Title" name="title" required>
+                <label class="label">Title</label>
+              </div>
+              <div class="largeWrap">
+                <input type="text" class="inputLarge" id="email" name="email" required>
+                <label class="label">Email</label>
+              </div>
+              <div class="largeWrap">
+                <input type="text" class="inputLarge" id="phone" name="phone" required>
+                <label class="label">Phone</label>
+              </div>
 
-				                  <option value="select">Select Country</option>
-				                  <option value="usa">United States</option>
-				                  <option value="canada">Canada</option>
-				                  <option value="mexico">Mexico</option>
-				                </select>
-				              <label class="label">Country</label>
-				            </div>
-				            <div class="smallWrap">
-				              <input type="text" class="inputSmall location" id="zipcode" name="zipCode" required>
-				              <label class="label">Zip Code</label>
-				            </div>
-				          </div>
-		  				<div class="largeWrap">
-			  				<input type="text" class="inputLarge" id="phone" name="phone" required>
-			  				<label class="label">Phone</label>
-			  			</div>
-		  				 <input class="btnGreen submit desktop" id="regFormSubmit" type="submit" value="Download Free Trial">
-			             <input class="btnGreen submit mobile" id="regFormSubmit" type="submit" value="Email link to free Trial">
-			  		</form>
-		        </div>
 
-	        </div>
-	    </div>
+               <input class="btnGreen submit" id="regFormSubmit" type="submit" value="Submit">
+            </form>  
+          </div>
 
-        <!-- What Happens Next Section -->
-        <div class="row">
-            <div class="col-md-12">
-	           	<div class="whatNext">
-		  			<h3>What happens next?</h3>
-		  			<ul>
-		  				<li>Copy here will highlight next steps of the download process</li>
-		  				<li>And something about the sales process</li>
-		  				<li>SolarWinds does not sell, rent, or lease your information to any third party.</li>
-		  			</ul>
-		  		</div>
-            </div>
-        </div>
-    </div> <!-- End oneCol_regFrom -->
+          <div class="col-xs-4 col-centered hereToHelp">
+              <div class="helpBox bg_white">
+	<h3>We're Here to Help</h3>
+    <p>If you'd like product information, evaluation software, or a quote-or if you need help coordinating a technical update, or adding a license-our Sales and Support teams are just a call or click away.</p>
+
+    <a href="#" class="btnOrange">Contact Us</a>
+</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
 
 
     <div class="container-fluid footer-top stretch">
